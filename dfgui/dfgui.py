@@ -271,7 +271,7 @@ class DataframePanel(wx.Panel):
         self.df_list_ctrl = ListCtrlDataFrame(self, df, status_bar_callback)
 
         sizer = wx.BoxSizer(wx.VERTICAL)
-        sizer.Add(self.df_list_ctrl, 1, wx.ALL | wx.EXPAND | wx.GROW, 10)
+        sizer.Add(self.df_list_ctrl, 1, wx.ALL | wx.EXPAND | wx.GROW, 1)
         self.SetSizer(sizer)
         self.Show()
 
