@@ -43,7 +43,7 @@ class ListCtrlDataFrame(wx.ListCtrl):
 
     # TODO: we could do something more sophisticated to come
     # TODO: up with a reasonable column width...
-    DEFAULT_COLUMN_WIDTH = 100
+    DEFAULT_COLUMN_WIDTH = 150
     TMP_SELECTION_COLUMN = 'tmp_selection_column'
 
     def __init__(self, parent, df, status_bar_callback):
