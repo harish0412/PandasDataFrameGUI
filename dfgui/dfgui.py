@@ -271,7 +271,7 @@ class DataframePanel(wx.Panel):
         self.df_list_ctrl = ListCtrlDataFrame(self, df, status_bar_callback)
 
         sizer = wx.BoxSizer(wx.VERTICAL)
-        sizer.Add(self.df_list_ctrl, 1, wx.ALL | wx.EXPAND | wx.GROW, 1)
+        sizer.Add(self.df_list_ctrl, 0.5, wx.ALL | wx.EXPAND | wx.GROW, 1)
         self.SetSizer(sizer)
         self.Show()
 
@@ -387,7 +387,7 @@ class ColumnSelectionPanel(wx.Panel):
         self.Bind(wx.EVT_LISTBOX, self.update_selected_columns)
 
         sizer = wx.BoxSizer(wx.VERTICAL)
-        sizer.Add(self.list_box, 1, wx.ALL | wx.EXPAND | wx.GROW, 5)
+        sizer.Add(self.list_box, 0.5, wx.ALL | wx.EXPAND | wx.GROW, 1)
         self.SetSizer(sizer)
         self.list_box.SetFocus()
 
@@ -424,7 +424,7 @@ class FilterPanel(wx.Panel):
 
             row_sizer = wx.BoxSizer(wx.HORIZONTAL)
             row_sizer.Add(combo_box, 0, wx.ALL, 5)
-            row_sizer.Add(text_ctrl, 1, wx.ALL | wx.EXPAND | wx.ALIGN_RIGHT, 5)
+            row_sizer.Add(text_ctrl, 0.5, wx.ALL | wx.EXPAND | wx.ALIGN_RIGHT, 1)
 
             self.combo_boxes.append(combo_box)
             self.text_controls.append(text_ctrl)
