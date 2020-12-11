@@ -597,7 +597,7 @@ class MainFrame(wx.Frame):
         nb.AddPage(self.page1, "Data Frame")
         nb.AddPage(self.page2, "Columns")
         nb.AddPage(self.page3, "Filters")
-        nb.AddPage(self.page4, "Histogram")
+        nb.AddPage(self.page4, "Histo")
         nb.AddPage(self.page5, "Scatter Plot")
 
         nb.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.on_tab_change)
